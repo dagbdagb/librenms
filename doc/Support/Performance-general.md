@@ -3,15 +3,18 @@ path: blob/master/doc/
 
 # Performance tuning in general
 
-Performance tuning is a wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take it's place. The goal is rarely to utilize all the hardware resources so they operate at max capacity. 
+Performance tuning is a wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take it's place. The goal is rarely to utilize *all* the hardware resources so they operate at max capacity, and 'go faster' is imprecise at best.
 
-But exactly what you should tune for is not always obvious. In a single purpose computer it is often about maximizing the throughout or getting to the result as quickly as possible.
+Exactly what you should tune for is not always obvious. In a single purpose computer it is often about maximizing the throughout or getting to the result as quickly as possible.
 
-On a shared computer or in a virtual environment, it may often be beneficial to flatten the load as much as possible. This allows for better utilization of the available hardware.
+On a shared computer or in a virtual environment, it may often be beneficial to flatten the load as much as possible. This allows for better utilization of the available hardware, which in turn allows us to buy exactly the right size of $stuff. Or in other words: we avoid having to scale our hardware for the occasional peak in whatever resource is peaking.
 
 But it could just as well be important to tune for predictable responsetimes, a power envelope or whatever. Also be aware that tuning for a single metric may occasionally be a pessimization, as some other bottleneck suddenly takes precedence.
 
-An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping.  
+An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping.
+
+Sometimes, the limitations are fixed, other times they are not. Adding more memory is often feasible, other limitations may require more effort to remedy. The important thing is to understand what you are optimizing *for*, which resource(s) is your current bottleneck, and what knob to turn to fix it.
+
 
 For computers, the classic *hardware* bottlenecks are:
 * CPU (cycles, clock, temperature, power)
