@@ -3,7 +3,7 @@ path: blob/master/doc/
 
 # Performance tuning in general
 
-Performance tuning is wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take it's place. The goal is rarely to utilize all the hardware resources so they operate at max capacity. 
+Performance tuning is a wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take it's place. The goal is rarely to utilize all the hardware resources so they operate at max capacity. 
 
 But exactly what you should tune for is not always obvious. In a single purpose computer it is often about maximizing the throughout or getting to the result as quickly as possible.
 
