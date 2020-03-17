@@ -1,4 +1,4 @@
-source: Support/Performance.md
+source: Support/Performance-general.md
 path: blob/master/doc/
 
 # Performance tuning in general
