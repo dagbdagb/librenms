@@ -14,11 +14,11 @@ But it could just as well be important to tune for predictable responsetimes, a 
 An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping.  
 
 For computers, the classic *hardware* bottlenecks are:
-CPU (cycles, clock, temperature, power)
-Network IO (bandwidth, IOPS)
-Memory (size, bandwidth)
-Cache (size, bandwidth)  applies to both Disk and CPU
-Disk (size, bandwith, IOPS)
+* CPU (cycles, clock, temperature, power)
+* Network IO (bandwidth, IOPS)
+* Memory (size, bandwidth)
+* Cache (size, bandwidth)  applies to both Disk and CPU
+* Disk (size, bandwith, IOPS)
 
 Figuring out what is your current bottleneck is beyond the scope of this document or Librenms, but contributions are welcome.
 
