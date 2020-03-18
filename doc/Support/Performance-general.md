@@ -13,8 +13,9 @@ But it could just as well be important to tune for predictable responsetimes, a 
 
 An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping.
 
-Sometimes, the limitations are fixed, other times they are not. Adding more memory is often feasible, other limitations may require more effort to remedy. The important thing is to understand what you are optimizing *for*, which resource(s) is your current bottleneck, and what knob to turn to fix it.
+Sometimes, the limitations are fixed, other times they are not. Adding more memory is often feasible, other limitations may require more effort to remedy. The important thing is to understand what you are optimizing *for*, figuring out which resource(s) is your current bottleneck, and what knob(s) to turn to fix it.
 
+Lather, rinse, repeat.
 
 For computers, the classic *hardware* bottlenecks are:
 * CPU (cycles, clock, temperature, power)
@@ -23,7 +24,7 @@ For computers, the classic *hardware* bottlenecks are:
 * Cache (size, bandwidth)  applies to both Disk and CPU
 * Disk (size, bandwith, IOPS)
 
-Figuring out what is your current bottleneck is beyond the scope of this document or Librenms, but contributions are welcome.
+Figuring out what is your current bottleneck is beyond the scope of LibreNMS, but this document may serve as a starting point. Contributions are welcome.
 
 As a minimum, you should be familiar with top/htop.
 
