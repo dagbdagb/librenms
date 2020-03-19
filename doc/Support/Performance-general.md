@@ -5,17 +5,23 @@ path: blob/master/doc/
 
 Performance tuning is a wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take it's place. The goal is rarely to utilize *all* the hardware resources so they operate at max capacity, and 'go faster' is imprecise at best.
 
-Exactly what you should tune for is not always obvious. In a single purpose computer it is often about maximizing the throughout or getting to the result as quickly as possible.
+Figuring out what is your current bottleneck is really beyond the scope of LibreNMS, but this document may serve as a starting point. Contributions are welcome.
+
+Exactly what you should tune *for* is not always obvious. In a single purpose computer it is often about maximizing the throughout or getting to the result as quickly as possible.
 
 On a shared computer or in a virtual environment, it may often be beneficial to flatten the load as much as possible. This allows for better utilization of the available hardware, which in turn allows us to buy exactly the right size of $stuff. Or in other words: we avoid having to scale our hardware for the occasional peak in whatever resource is peaking.
 
-But it could just as well be important to tune for predictable responsetimes, a power envelope or whatever. Also be aware that tuning for a single metric may occasionally be a pessimization, as some other bottleneck suddenly takes precedence.
+But it could just as well be important to tune for predictable responsetimes, a given power envelope or whatever. Also be aware that tuning for a single metric may occasionally turn out to be a pessimization, as some other bottleneck suddenly takes precedence.
 
-An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping.
+An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping. Occasionally, the Operating System itself may offer tuning knobs. Having *more* knobs to turn does not make the job easier. 
 
 Sometimes, the limitations are fixed, other times they are not. Adding more memory is often feasible, other limitations may require more effort to remedy. The important thing is to understand what you are optimizing *for*, figuring out which resource(s) is your current bottleneck, and what knob(s) to turn to fix it.
 
 Lather, rinse, repeat.
+
+The skills required for this takes time to master, which is why most end up throwing more hardware at performance problems instead. This may be a perfectly good solution.
+
+If you are not discouraged yet:
 
 For computers, the classic *hardware* bottlenecks are:
 * CPU (cycles, clock, temperature, power)
@@ -24,7 +30,6 @@ For computers, the classic *hardware* bottlenecks are:
 * Cache (size, bandwidth)  applies to both Disk and CPU
 * Disk (size, bandwith, IOPS)
 
-Figuring out what is your current bottleneck is beyond the scope of LibreNMS, but this document may serve as a starting point. Contributions are welcome.
+Then there is the Operating System, with its myriad of schedulers and various magic incantations not to be uttered in polite company.
 
-As a minimum, you should be familiar with top/htop.
-
+And finally, the application on top. In our case LibreNMS is polling data via the network, writing to RRDs on disk (or to the net via NFS), and communicating with MySQL (locally, or via the net). MySQL reads and writes data to disk.
