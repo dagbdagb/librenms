@@ -3,7 +3,7 @@ path: blob/master/doc/
 
 # Performance tuning in general
 
-Performance tuning is a wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take it's place. The goal is rarely to utilize *all* the hardware resources so they operate at max capacity, and 'go faster' is imprecise at best.
+Performance tuning is a wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take its place. The goal is rarely to utilize *all* the hardware resources so they operate at max capacity, and 'go faster' is imprecise at best.
 
 Figuring out what is your current bottleneck is really beyond the scope of LibreNMS, but this document may serve as a starting point. Contributions are welcome.
 
