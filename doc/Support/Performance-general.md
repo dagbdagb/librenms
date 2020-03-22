@@ -36,7 +36,7 @@ Add in a shared environments and/or resources (be it virtual machines, virtual h
 
 
 2. the operating system
-Then there is the Operating System, with its myriad of schedulers and various magic incantations not to be uttered in polite company. 
+The Operating System, offers a myriad of virtual knobs, buttons and switches and various magic incantations not to be uttered in polite company.
 
 3. application
 And finally, the application on top. In the case of LibreNMS, we are polling data via the network, writing to RRDs on disk (or to the net via NFS), and communicating with MySQL (locally, or via the net). MySQL reads and writes data to disk. 
