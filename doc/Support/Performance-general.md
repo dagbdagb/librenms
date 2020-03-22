@@ -33,7 +33,7 @@ For computers, the classic bottlenecks are:
 * Cache (size, bandwidth)  applies to both Disk and CPU
 * Disk (size, bandwith, IOPS)
 
-Add in a shared environments and/or resources (be it virtual machines/hardware or general servers doing multiple things) and the picture quickly becomes quite fuzzy. 
+Add in a shared environments and/or resources (be it virtual machines/hardware, hypervisors or general servers doing multiple things) and the picture quickly becomes quite fuzzy. 
 
 2. the operating system
 The Operating System, offers a myriad of virtual knobs, buttons and switches and various magic incantations not to be uttered in polite company.
@@ -61,9 +61,10 @@ This is a small selection of online resources offering explanations and examples
 
 ## Method
 
+0. understand what to optimize *for*
 1. observe and measure
-2. do *one* change
-3. observe and measure
-4. evaluate
+2. evaluate, identify bottleneck
+3. do *one* change
+4. observe and measure
 5. go to 2.
 
