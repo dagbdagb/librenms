@@ -32,8 +32,7 @@ For computers, the classic bottlenecks are:
 * Cache (size, bandwidth)  applies to both Disk and CPU
 * Disk (size, bandwith, IOPS)
 
-Add in a shared environments and/or resources (be it virtual machines, virtual hardware or general servers doing multiple things) and the picture quickly becomes quite fuzzy. 
-
+Add in a shared environments and/or resources (be it virtual machines/hardware or general servers doing multiple things) and the picture quickly becomes quite fuzzy. 
 
 2. the operating system
 The Operating System, offers a myriad of virtual knobs, buttons and switches and various magic incantations not to be uttered in polite company.
@@ -59,5 +58,11 @@ This is a small selection of online resources offering explanations and examples
 * [Disk IO analysis](https://haydenjames.io/linux-server-performance-disk-io-slowing-application/)
 * [atop](https://haydenjames.io/use-atop-linux-server-performance-analysis/)
 
+## Method
 
+1. observe and measure
+2. do *one* change
+3. observe and measure
+4. evaluate
+5. go to 2.
 
