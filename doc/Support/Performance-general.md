@@ -63,8 +63,8 @@ This is a small selection of online resources offering explanations and examples
 
 0. understand what to optimize *for*
 1. observe and measure
-2. evaluate, identify bottleneck
-3. do *one* change
-4. observe and measure
-5. go to 2.
+2. evaluate
+3. identify bottleneck
+4. do *one* change
+5. go to 1.
 
