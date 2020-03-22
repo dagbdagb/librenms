@@ -21,7 +21,7 @@ Sometimes, the limitations are fixed, other times they are not. Adding more memo
 
 Lather, rinse, repeat.
 
-The skills required for this takes som time and dedication to master, which is why most end up throwing more hardware at performance problems instead. *This is a valid and highly pragmatic solution.* It may not always work out, or be an available option.
+The skills required for doing this requires some time and dedication to master, which is why most end up throwing more hardware at performance problems instead. *This is a valid and highly pragmatic solution.* It may not always work out, or be an available option.
 
 If you are not discouraged yet:
 
