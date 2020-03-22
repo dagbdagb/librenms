@@ -30,6 +30,6 @@ For computers, the classic *hardware* bottlenecks are:
 * Cache (size, bandwidth)  applies to both Disk and CPU
 * Disk (size, bandwith, IOPS)
 
-Then there is the Operating System, with its myriad of schedulers and various magic incantations not to be uttered in polite company.
+Then there is the Operating System, with its myriad of schedulers and various magic incantations not to be uttered in polite company. Add in a shared environments and/or resources (be it virtual machines or general servers doing multiple things) and the picture becomes quite fuzzy.
 
-And finally, the application on top. In our case LibreNMS is polling data via the network, writing to RRDs on disk (or to the net via NFS), and communicating with MySQL (locally, or via the net). MySQL reads and writes data to disk.
+And finally, the application on top. In our case LibreNMS is polling data via the network, writing to RRDs on disk (or to the net via NFS), and communicating with MySQL (locally, or via the net). MySQL reads and writes data to disk. 
