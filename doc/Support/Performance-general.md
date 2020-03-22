@@ -33,13 +33,15 @@ For computers, the classic bottlenecks are:
 * Cache (size, bandwidth)  applies to both Disk and CPU
 * Disk (size, bandwith, IOPS)
 
-Add in a shared environments and/or resources (be it virtual machines/hardware, hypervisors or general servers doing multiple things) and the picture quickly becomes quite fuzzy. 
+Add in shared environments and/or resources (be it virtual machines/hardware, hypervisors or general servers doing multiple things) and the picture quickly becomes quite fuzzy. 
 
 2. the operating system
 The Operating System, offers a myriad of virtual knobs, buttons and switches and various magic incantations not to be uttered in polite company.
 
 3. application
 And finally, the application on top. In the case of LibreNMS, we are polling data via the network, writing to RRDs on disk (or to the net via NFS), and communicating with MySQL (locally, or via the net). MySQL reads and writes data to disk. 
+
+If the hardware is a 'fixed size', it is generally accepted that you should spend the bulk of your optimization and tuning efforts on the application. 1000s of times the resources you have available have already been spent on tuning the OS. That said, specific workloads can certainly merit tuning OS parameters. 
 
 
 ## Tools
@@ -62,9 +64,8 @@ This is a small selection of online resources offering explanations and examples
 ## Method
 
 0. understand what to optimize *for*
-1. observe and measure
-2. evaluate
-3. identify bottleneck
-4. do *one* change
-5. go to 1.
+1. observe, measure and document the performance
+2. evaluate data and identify the bottleneck
+3. do *one* change intended to elliminate or minimize the impact of the bottleneck. document the change.
+4. go to 1.
 
