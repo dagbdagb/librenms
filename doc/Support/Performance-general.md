@@ -1,6 +1,7 @@
 source: Support/Performance-general.md
 path: blob/master/doc/
 
+
 # Performance tuning in general
 
 Performance tuning is a wide topic which boils down to the simple fact that there will always be at least one hardware bottleneck. Elliminate one hardware bottleneck, and another will eventually take its place. The goal is rarely to utilize *all* the hardware resources so they operate at max capacity, and 'go faster' is imprecise at best.
@@ -23,16 +24,23 @@ The skills required for this takes som time and dedication to master, which is w
 
 If you are not discouraged yet:
 
-For computers, the classic *hardware* bottlenecks are:
+For computers, the classic bottlenecks are:
+1. hardware
 * CPU (cycles, clock, temperature, power)
 * Network IO (bandwidth, IOPS)
 * Memory (size, bandwidth)
 * Cache (size, bandwidth)  applies to both Disk and CPU
 * Disk (size, bandwith, IOPS)
 
-Then there is the Operating System, with its myriad of schedulers and various magic incantations not to be uttered in polite company. Add in a shared environments and/or resources (be it virtual machines or general servers doing multiple things) and the picture becomes quite fuzzy.
+Add in a shared environments and/or resources (be it virtual machines, virtual hardware or general servers doing multiple things) and the picture quickly becomes quite fuzzy. 
 
-And finally, the application on top. In our case LibreNMS is polling data via the network, writing to RRDs on disk (or to the net via NFS), and communicating with MySQL (locally, or via the net). MySQL reads and writes data to disk. 
+
+2. the operating system
+Then there is the Operating System, with its myriad of schedulers and various magic incantations not to be uttered in polite company. 
+
+3. application
+And finally, the application on top. In the case of LibreNMS, we are polling data via the network, writing to RRDs on disk (or to the net via NFS), and communicating with MySQL (locally, or via the net). MySQL reads and writes data to disk. 
+
 
 ## Tools
 
