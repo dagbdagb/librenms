@@ -45,11 +45,11 @@ And finally, the application on top. In our case LibreNMS is polling data via th
 
 This is a small selection of online resources offering explanations and examples for one or more of the tools mentioned above. Contents have not been vetted or validated in any way.
 
-[Linux Performance Monitoring Intro] (https://www.thegeekstuff.com/2011/03/linux-performance-monitoring-intro/)
-[Performace issues - how and where to start in Linux] (https://www.simplylinuxfaq.com/2017/12/performance-issues-how-and-where-to-start-in-linux.html)
-[Command line tools to monitor Linux performance] (https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/)
-[Disk IO analysis] (https://haydenjames.io/linux-server-performance-disk-io-slowing-application/)
-[atop] (https://haydenjames.io/use-atop-linux-server-performance-analysis/)
+* [Linux Performance Monitoring Intro] (https://www.thegeekstuff.com/2011/03/linux-performance-monitoring-intro/)
+* [Performance issues - how and where to start in Linux] (https://www.simplylinuxfaq.com/2017/12/performance-issues-how-and-where-to-start-in-linux.html)
+* [Command line tools to monitor Linux performance] (https://www.tecmint.com/command-line-tools-to-monitor-linux-performance/)
+* [Disk IO analysis] (https://haydenjames.io/linux-server-performance-disk-io-slowing-application/)
+* [atop] (https://haydenjames.io/use-atop-linux-server-performance-analysis/)
 
 
 
