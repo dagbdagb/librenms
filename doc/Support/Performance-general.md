@@ -43,7 +43,7 @@ And finally, the application on top. In our case LibreNMS is polling data via th
 
 ## Resources
 
-This is a small selection of online resources offering explanations and examples for one or more of the tools mentioned above. Contents have not been vetted or validated in any way.
+This is a small selection of online resources offering explanations and examples for one or more of the tools mentioned above. Contents have not been vetted or validated.
 
 * [Linux Performance Monitoring Intro](https://www.thegeekstuff.com/2011/03/linux-performance-monitoring-intro/)
 * [Performance issues - how and where to start in Linux](https://www.simplylinuxfaq.com/2017/12/performance-issues-how-and-where-to-start-in-linux.html)
