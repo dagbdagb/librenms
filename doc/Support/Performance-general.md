@@ -13,7 +13,7 @@ On a shared computer or in a virtual environment, it may often be beneficial to 
 
 But it could just as well be important to tune for predictable responsetimes, a given power envelope or whatever. Also be aware that tuning for a single metric may occasionally turn out to be a pessimization, as some other bottleneck suddenly takes precedence.
 
-An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping. Occasionally, the Operating System itself may offer tuning knobs. Having *more* knobs to turn does not make the job easier. 
+An example of this is when you change an algorithm to perform better by utilizing way more memory. Suddenly the bottleneck is no longer the CPU, but memory, or even disk because you are swapping. Occasionally, the Operating System itself may offer tuning knobs. Unsurprisingly, having *more* knobs to turn does not make the job easier. 
 
 Sometimes, the limitations are fixed, other times they are not. Adding more memory is often feasible, other limitations may require more effort to remedy. The important thing is to understand what you are optimizing *for*, figuring out which resource(s) is your current bottleneck, and what knob(s) to turn to fix it.
 
