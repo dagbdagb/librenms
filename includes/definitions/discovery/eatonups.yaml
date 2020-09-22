@@ -1,3 +1,4 @@
+mib: EATON-OIDS:EATON-EMP-MIB
 modules:
     os:
         hardware: XUPS-MIB::xupsIdentModel.0
@@ -7,4 +8,36 @@ modules:
             - XUPS-MIB::xupsAgentModel.0
             - XUPS-MIB::xupsAgentSoftwareVersion.0
         features_template: '{{ XUPS-MIB::xupsAgentModel.0 }} {{ XUPS-MIB::xupsAgentSoftwareVersion.0 }}'
+    sensors:
+        temperature:
+            data:
+                -
+                    oid: xupsEnvironment
+                    value: xupsEnvAmbientTemp
+                    num_oid: '.1.3.6.1.4.1.534.1.6.1.{{ $index }}'
+                    descr: 'Environment'
+                    index: 'xupsEnvAmbientTemp.{{ $index }}'
+        state:
+            data:
+                -
+                    oid: xupsBattery
+                    value: xupsBatteryAbmStatus
+                    num_oid: '.1.3.6.1.4.1.534.1.2.5.{{ $index }}'
+                    descr: 'Battery'
+                    index: 'xupsBatteryAbmStatus.{{ $index }}'
+                    state_name: xupsBatteryAbmStatus
+                    states:
+                        - { descr: batteryCharging, graph: 0, value: 1, generic: 0 }
+                        - { descr: batteryDischarging, graph: 0, value: 2, generic: 0 }
+                        - { descr: batteryFloating, graph: 0, value: 3, generic: 0 }
+                        - { descr: batteryResting, graph: 0, value: 4, generic: 0 }
+                        - { descr: unknown, graph: 0, value: 5, generic: 0 }
+                        - { descr: batteryDisconnected, graph: 0, value: 6, generic: 0 }
+                        - { descr: batteryUnderTest, graph: 0, value: 7, generic: 0 }
 
+#                -
+#                    oid: xupsBattery
+#                    value: xupsBatteryLastReplacedDate
+#                    num_oid: '.1.3.6.1.4.1.534.1.2.6.{{ $index }}'
+#                    descr: 'Battery'
+#                    index: 'xupsBatteryLastReplacedDate.{{ $index }}'
