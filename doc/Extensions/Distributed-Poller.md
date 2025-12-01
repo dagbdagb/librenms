@@ -52,6 +52,7 @@ REDIS_PASSWORD=PasswordGoesHere
 # If Redis ACLs are in use (recommended):
 REDIS_USERNAME=UsernameGoesHere
 ```
+Only the shared server points at 127.0.0.1, the others at the shared servers general IP address.
 
 ### Sentinel
 
